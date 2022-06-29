@@ -20,7 +20,7 @@ class Documento extends Model
         if(file_exists($path))
         {
             $file = scandir($path);
-            if($file != "")
+            if(count($file) > 0)
             {
                 return true;
             }
@@ -33,7 +33,7 @@ class Documento extends Model
         if(file_exists($path))
         {
             $file = scandir($path);
-            if($file != "")
+            if(count($file) > 0)
             {
                 return true;
             }
@@ -46,7 +46,7 @@ class Documento extends Model
         if(file_exists($path))
         {
             $file = scandir($path);
-            if($file != "")
+            if(count($file) > 0)
             {
                 return true;
             }
