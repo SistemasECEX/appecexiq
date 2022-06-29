@@ -189,12 +189,12 @@
                         <td>{{ $documento->estado }}</td>
                         <td>@if ($documento->activo) <i class="fas fa-check-square" style="color:green"></i> @else <i class="fa-solid fa-square-xmark" style="color:red"></i> @endif</td>
                         @if ($nivel > 1) 
-                            @if ($documento->path() != '')<td><a href="/documentos/documentos_view/{{ $documento->id }}"><i style="color: #CCC;font-size:35px;" class="fa-solid fa-file-pdf"></i></a></td> @else<td></td>@endif
+                            @if ($documento->path())<td><a href="/documentos/documentos_view/{{ $documento->id }}"><i style="color: #CCC;font-size:35px;" class="fa-solid fa-file-pdf"></i></a></td> @else<td></td>@endif
                         @endif
                         @if ($nivel > 1)
-                            @if ($documento->path_modificable() != '')<td><a href="/documentos/documentos_view_mod/{{ $documento->id }}"><i style="color: #CCC;font-size:35px;" class="fa-solid fa-file-signature"></i></a></td> @else<td></td>@endif
+                            @if ($documento->path_modificable())<td><a href="/documentos/documentos_view_mod/{{ $documento->id }}"><i style="color: #CCC;font-size:35px;" class="fa-solid fa-file-signature"></i></a></td> @else<td></td>@endif
                         @endif
-                        @if ($documento->path_marca_de_agua() != '')<td><a href="/documentos/documentos_view_wmk/{{ $documento->id }}"><i style="color: #CCC;font-size:35px;" class="fa-solid fa-file-circle-exclamation"></i></a></td> @else<td></td>@endif
+                        @if ($documento->path_marca_de_agua())<td><a href="/documentos/documentos_view_wmk/{{ $documento->id }}"><i style="color: #CCC;font-size:35px;" class="fa-solid fa-file-circle-exclamation"></i></a></td> @else<td></td>@endif
                         @if ($nivel > 1) 
                         <td><button class="btn btn-success" onclick="editar({{ $documento->id }})"><i class="fa-solid fa-pen-to-square"></i></button></td>
                         @endif
