@@ -68,7 +68,7 @@
     <div class="dropdown-content">
         <a href="#"><i class="fa-solid fa-xmark"></i> FODA</a>
         <a href="/documentos/activo/AA-BB-CC-04"><i class="fa-solid fa-angle-right"></i> Partes interesadas</a>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Alcance del SGC</a>
+        <a href="/documentos/activo/DGE-MA-GC-01"><i class="fa-solid fa-angle-right"></i> Alcance del SGC</a>
         <a href="#"><i class="fa-solid fa-xmark"></i> Mapa de procesos</a>
     </div>
     </div>
@@ -76,7 +76,8 @@
     <div class="dropdown">
     <button class="dropbtn">5. Liderazgo</button>
     <div class="dropdown-content">
-        <a href="#"><i class="fa-solid fa-xmark"></i> Organigrama</a>
+        <a href="/documentos/activo/DGE-MA-GC-05"><i class="fa-solid fa-angle-right"></i> Organigrama Ecex</a>
+        <a href="/documentos/activo/DI-MA-GC-48"><i class="fa-solid fa-angle-right"></i> Organigrama David's</a>
         <a href="/liderazgo/perfiles_de_puesto"><i class="fa-solid fa-angle-right"></i> Perfiles de puesto</a>
     </div>
     </div>
@@ -84,19 +85,18 @@
     <div class="dropdown">
     <button class="dropbtn">6. Planificación</button>
     <div class="dropdown-content">
-        <a href="#"><i class="fa-solid fa-xmark"></i> Gestion de riesgos</a>
+        <a href="/documentos/activo/DGE-FR-GC-56"><i class="fa-solid fa-angle-right"></i> Gestion de riesgos</a>
         <a href="/folders/Matriz_de_Riesgos"><i class="fa-solid fa-angle-right"></i> Matríz de riesgos</a>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Planificación de cambios</a>
+        <a href="/documentos/activo/DGE-MA-GC-08"><i class="fa-solid fa-angle-right"></i> Planificación de cambios</a>
     </div>
     </div>
 
     <div class="dropdown">
     <button class="dropbtn">7. Soporte</button>
     <div class="dropdown-content">
-        <a href="/documentos/activo/DGE-FR-GC-103"><i class="fa-solid fa-xmark"></i> Determinación de ambiente de trabajo</a>
+        <a href="/documentos/activo/DGE-FR-GC-103"><i class="fa-solid fa-angle-right"></i> Determinación de ambiente de trabajo</a>
         <strong>Capacitaciones</strong>
         <a href="/folders/Matriz_de_Capactaciones"><i class="fa-solid fa-angle-right"></i> Matriz de capacitaciones</a>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Formato de comunicación</a>
         <a href="#"><i class="fa-solid fa-xmark"></i> Instrucción de trabajo de informacion documentada</a>
     </div>
     </div>
@@ -108,7 +108,7 @@
         <a href="/folders/Lista_de_Proveedores"><i class="fa-solid fa-angle-right"></i> Lista de proveedores</a>
         <a href="/folders/Evaluacion_de_Proveedores"><i class="fa-solid fa-angle-right"></i> Evaluación de poroveedores</a>
         <strong>Salidas no conformes</strong>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Formatos llenos</a>
+        <a href="/documentos/formatos_llenos"><i class="fa-solid fa-angle-right"></i> Formatos llenos</a>
         <a href="/folders/Matriz_de_Salidas_no_Conformes"><i class="fa-solid fa-angle-right"></i> Matriz de salidas <strong>NC</strong></a>
     </div>
     </div>
@@ -123,8 +123,8 @@
         <strong>Externas</strong>
         <a href="#"><i class="fa-solid fa-xmark"></i> Documentos</a>
         <strong></strong>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Revisión por la dirección</a>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Información documentada de los procesos</a>
+        <a href="/documentos/activo/DGE-FR-GC-55"><i class="fa-solid fa-angle-right"></i> Revisión por la dirección</a>
+        <!-- <a href="#"><i class="fa-solid fa-xmark"></i> Información documentada de los procesos</a> -->
         <strong>Métricos</strong>
         <a href="/folders/Encuestas_de_satisfaccion_al_cliente"><i class="fa-solid fa-angle-right"></i> Encuestas de satisfacción al cliente</a>
     </div>
@@ -133,10 +133,10 @@
     <div class="dropdown">
     <button class="dropbtn">10. Mejora</button>
     <div class="dropdown-content">
-        <a href="#"><i class="fa-solid fa-xmark"></i> Mejora continua</a>
+        <a href="/documentos/activo/DGE-PR-GC-23"><i class="fa-solid fa-angle-right"></i> Mejora continua</a>
         <strong>Acciones correctivas</strong>
         <a href="/folders/Listado_de_Acciones"><i class="fa-solid fa-angle-right"></i> Listado de acciones</a>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Matriz de AC</a>
+        <a href="/folders/Matriz_de_AC"><i class="fa-solid fa-angle-right"></i> Matriz de AC</a>
         <a href="/folders/AC_Pendientes"><i class="fa-solid fa-angle-right"></i> AC pendientes</a>
     </div>
     </div>
