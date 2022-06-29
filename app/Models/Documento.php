@@ -20,7 +20,9 @@ class Documento extends Model
         if(file_exists($path))
         {
             $file = scandir($path);
-            if(count($file) > 0)
+            //para considerar que el registro cuenta con un solo archivo dentro de la carpeta 
+            //se pide que el arreglo de archivos dentro sea de 3 elementos porque los primeros 2 son "." y ".."
+            if(count($file) == 3)
             {
                 return true;
             }
@@ -33,7 +35,7 @@ class Documento extends Model
         if(file_exists($path))
         {
             $file = scandir($path);
-            if(count($file) > 0)
+            if(count($file) == 3)
             {
                 return true;
             }
@@ -46,7 +48,7 @@ class Documento extends Model
         if(file_exists($path))
         {
             $file = scandir($path);
-            if(count($file) > 0)
+            if(count($file) == 3)
             {
                 return true;
             }
