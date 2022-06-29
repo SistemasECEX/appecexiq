@@ -180,13 +180,6 @@
                 <tbody id="tbl_Documentos">
                     @foreach ($documentos as $documento)
                     <tr>
-                        @php
-                        if(!$documento->path())
-                        {
-                            $documento->activo = false;
-                            $documento->save();
-                        }
-                        @endphp
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $documento->codigo }}</td>
                         <td>{{ $documento->titulo }}</td>
