@@ -17,10 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('codigo');
             $table->string('titulo');
-            $table->string('folio');
-            $table->dateTime('fecha');
-            $table->string('estado');
-            $table->string('path');
+            $table->string('descripcion');
+            $table->dateTime('fecha');            
             $table->timestamps();
         });
     }

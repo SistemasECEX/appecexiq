@@ -106,16 +106,14 @@ class DocumentoController extends Controller
                 $dir_storage = 'storage/Archivos/Documentos/' . $registro->id . '/' . $version;
                 $path = $dir . '/' . $registro->id . '-' . $registro->titulo . '.' . $request->file('file')->extension();
                 $path_storage = $dir_storage . '/' . $registro->id . '-' . $registro->titulo . '.' . $request->file('file')->extension();
-                $registro->path = $path;
-                if($registro->save())
+                
+                if(file_exists($dir_storage))
                 {
-                    if(file_exists($dir_storage))
-                    {
-                        // si ya hay un archivo con el mismo nombre se va a remplazar
-                        Storage::deleteDirectory($dir);
-                    }
-                    Storage::put($path, file_get_contents($request->file('file')));
+                    // si ya hay un archivo con el mismo nombre se va a remplazar
+                    Storage::deleteDirectory($dir);
                 }
+                Storage::put($path, file_get_contents($request->file('file')));
+                
             }
             if($_FILES['fileSource']['name'] != "") 
             {
@@ -124,16 +122,14 @@ class DocumentoController extends Controller
                 $dir_storage = 'storage/Archivos/Documentos/' . $registro->id . '/' . $version;
                 $path = $dir . '/' . $registro->id . '-' . $registro->titulo . '.' . $request->file('fileSource')->extension();
                 $path_storage = $dir_storage . '/' . $registro->id . '-' . $registro->titulo . '.' . $request->file('fileSource')->extension();
-                $registro->path_modificable = $path;
-                if($registro->save())
+                
+                if(file_exists($dir_storage))
                 {
-                    if(file_exists($dir_storage))
-                    {
-                        // si ya hay un archivo con el mismo nombre se va a remplazar
-                        Storage::deleteDirectory($dir);
-                    }
-                    Storage::put($path, file_get_contents($request->file('fileSource')));
+                    // si ya hay un archivo con el mismo nombre se va a remplazar
+                    Storage::deleteDirectory($dir);
                 }
+                Storage::put($path, file_get_contents($request->file('fileSource')));
+                
             }
             if($_FILES['fileWM']['name'] != "") 
             {
@@ -142,16 +138,14 @@ class DocumentoController extends Controller
                 $dir_storage = 'storage/Archivos/Documentos/' . $registro->id . '/' . $version;
                 $path = $dir . '/' . $registro->id . '-' . $registro->titulo . '.' . $request->file('fileWM')->extension();
                 $path_storage = $dir_storage . '/' . $registro->id . '-' . $registro->titulo . '.' . $request->file('fileWM')->extension();
-                $registro->path_marca_de_agua = $path;
-                if($registro->save())
+                
+                if(file_exists($dir_storage))
                 {
-                    if(file_exists($dir_storage))
-                    {
-                        // si ya hay un archivo con el mismo nombre se va a remplazar
-                        Storage::deleteDirectory($dir);
-                    }
-                    Storage::put($path, file_get_contents($request->file('fileWM')));
+                    // si ya hay un archivo con el mismo nombre se va a remplazar
+                    Storage::deleteDirectory($dir);
                 }
+                Storage::put($path, file_get_contents($request->file('fileWM')));
+                
             }
         }
         return redirect('/documentos/documentos');
@@ -210,37 +204,43 @@ class DocumentoController extends Controller
 
     public function viewDocumento(Documento $documento)
     {
-        if($documento->path != "")
+        $path = 'storage/Archivos/Documentos/' . $documento->id . "/Final/";
+        if(file_exists($path))
         {
-            $path = str_replace("public/","storage/",$documento->path);
-            if(file_exists($path))
+            $file = scandir($path);
+            // tiene que ser mayor de 2 porque los primeros 2 archivos encontrados son = .  y  ..
+            if(count($file) > 2)
             {
-                return response()->file($path);
+                return response()->file($path . $file[2]);
             }
         }
         return "No hay archivo";
     }
     public function viewDocumentoMod(Documento $documento)
     {
-        if($documento->path_modificable != "")
+        $path = 'storage/Archivos/Documentos/' . $documento->id . "/Modificable/";
+        if(file_exists($path))
         {
-            $path = str_replace("public/","storage/",$documento->path_modificable);
+            $file = scandir($path);
+                        // tiene que ser mayor de 2 porque los primeros 2 archivos encontrados son = .  y  ..
 
-            if(file_exists($path))
+            if(count($file) > 2)
             {
-                return response()->file($path);
+                return response()->file($path . $file[2]);
             }
         }
         return "No hay archivo";
     }
     public function viewDocumentoWMA(Documento $documento)
     {
-        if($documento->path_marca_de_agua != "")
+        $path = 'storage/Archivos/Documentos/' . $documento->id . "/Marca_de_agua/";
+        if(file_exists($path))
         {
-            $path = str_replace("public/","storage/",$documento->path_marca_de_agua);
-            if(file_exists($path))
+            $file = scandir($path);            // tiene que ser mayor de 2 porque los primeros 2 archivos encontrados son = .  y  ..
+
+            if(count($file) > 2)
             {
-                return response()->file($path);
+                return response()->file($path . $file[2]);
             }
         }
         return "No hay archivo";

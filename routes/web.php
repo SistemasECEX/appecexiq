@@ -40,6 +40,12 @@ Route::get('/documentos/documentos_view_mod/{documento}','DocumentoController@vi
 Route::get('/documentos/documentos_view_wmk/{documento}','DocumentoController@viewDocumentoWMA')->middleware(['auth','allow.only:Regular']);
 Route::get('/documentos/activo/{codigo}','DocumentoController@getDocumentoActivo')->middleware(['auth','allow.only:Regular']);
 
+Route::get('/documentos/formatos_llenos','FormatoLlenoController@index')->middleware(['auth']);
+Route::post('/documentos/formatos_llenos_guardar','FormatoLlenoController@store')->middleware(['auth']);
+Route::get('/documentos/formatos_llenos/{formato}','FormatoLlenoController@show')->middleware(['auth']);
+Route::get('/documentos/formatos_llenos_delete/{formato}','FormatoLlenoController@destroy')->middleware(['auth']);
+Route::get('/documentos/formatos_llenos_view/{formato}','FormatoLlenoController@viewFormatoLlenoDeReunion')->middleware(['auth']);
+
 // Pestaña LIDERAZGO
 Route::get('/liderazgo/perfiles_de_puesto','PerfilDePuestoController@index')->middleware(['auth']);
 Route::post('/liderazgo/perfiles_de_puesto_guardar','PerfilDePuestoController@store')->middleware(['auth']);
