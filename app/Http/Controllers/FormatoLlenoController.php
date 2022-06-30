@@ -60,30 +60,36 @@ class FormatoLlenoController extends Controller
         if($registro->save())
         {
             //archivo
-            $path_archivo_public = 'public/Archivos/Formatos_Llenos/' . $registro->id . '/' . $registro->id . ".pdf";
-            $path_archivo_storage = 'storage/Archivos/Formatos_Llenos/' . $registro->id . '/' . $registro->id . ".pdf";
-
-            //$path_adjuntos = 'storage/Archivos/Formatos_Llenos/' . $registro->id . '/adjuntos/' . $request->file('file')->extension();
-
-            if(file_exists($path_archivo_storage))
+            if($_FILES['file']['name'] != "") 
             {
-                // si ya hay un archivo con el mismo nombre se va a remplazar
-                Storage::delete($path_archivo_public);
+                $path_archivo_public = 'public/Archivos/Formatos_Llenos/' . $registro->id . '/' . $registro->id . ".pdf";
+                $path_archivo_storage = 'storage/Archivos/Formatos_Llenos/' . $registro->id . '/' . $registro->id . ".pdf";
+
+                //$path_adjuntos = 'storage/Archivos/Formatos_Llenos/' . $registro->id . '/adjuntos/' . $request->file('file')->extension();
+
+                if(file_exists($path_archivo_storage))
+                {
+                    // si ya hay un archivo con el mismo nombre se va a remplazar
+                    Storage::delete($path_archivo_public);
+                }
+                Storage::put($path_archivo_public, file_get_contents($request->file('file')));
             }
-            Storage::put($path_archivo_public, file_get_contents($request->file('file')));
 
-            //adjuntos
-            if(file_exists('storage/Archivos/Formatos_Llenos/' . $registro->id . '/adjuntos'))
+            if($request->file('evidencias') !== null) 
             {
-                // si ya hay un archivo con el mismo nombre se va a remplazar
-                Storage::deleteDirectory('public/Archivos/Formatos_Llenos/' . $registro->id . '/adjuntos');
-            }
-            $i = 0;
-            foreach ($request->file('evidencias') as $file) 
-            {
-                $i++;
-                $path_adjuntos_public = '/public/Archivos/Formatos_Llenos/' . $registro->id . '/' . 'adjuntos/' . $i . "." . $file->extension();    
-                Storage::put($path_adjuntos_public, file_get_contents($file));
+                //adjuntos
+                if(file_exists('storage/Archivos/Formatos_Llenos/' . $registro->id . '/adjuntos'))
+                {
+                    // si ya hay un archivo con el mismo nombre se va a remplazar
+                    Storage::deleteDirectory('public/Archivos/Formatos_Llenos/' . $registro->id . '/adjuntos');
+                }
+                $i = 0;
+                foreach ($request->file('evidencias') as $file) 
+                {
+                    $i++;
+                    $path_adjuntos_public = '/public/Archivos/Formatos_Llenos/' . $registro->id . '/' . 'adjuntos/' . $i . "." . $file->extension();    
+                    Storage::put($path_adjuntos_public, file_get_contents($file));
+                }
             }
         }
 
