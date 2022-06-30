@@ -22,6 +22,7 @@ Route::post('/inicio/actas_de_reunion_guardar','ActaDeReunionController@store')-
 Route::get('/inicio/actas_de_reunion/{acta_de_reunion}','ActaDeReunionController@show')->middleware(['auth']);
 Route::get('/inicio/actas_de_reunion_delete/{acta_de_reunion}','ActaDeReunionController@destroy')->middleware(['auth']);
 Route::get('/inicio/actas_de_reunion_view/{acta_de_reunion}','ActaDeReunionController@viewActaDeReunion')->middleware(['auth']);
+Route::get('/inicio/nosotros','NosotrosController@index')->middleware(['auth']);
 
 // Pestaña USUARIOS
 Route::get('/usuarios/perfiles_de_usuario','UsersController@index')->middleware(['auth']);
