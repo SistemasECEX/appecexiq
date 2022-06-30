@@ -65,7 +65,7 @@ class NotificationController extends Controller
                 Mail::to($registro->usuario()->email)->send(new SentNotification($registro));
             }
         }
-        //return count($usuarios_ids[0]);
+        return redirect('/');
     }
     public function destroy(Notification $notificacion)
     {

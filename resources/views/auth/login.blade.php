@@ -3,7 +3,8 @@
         <x-slot name="logo">
             <a href="/">
                 <img src="{{asset('storage/images/logo.png')}}" style="width:100px; display:inline-block">
-                <img src="{{asset('storage/images/iso_logo.webp')}}" style="width:80px; display:inline-block">
+                <img src="{{asset('storage/images/iso_logo.png')}}" style="width:80px; display:inline-block">
+                <img src="{{asset('storage/images/oea_logo.png')}}" style="width:80px; display:inline-block">
                 
                 <!--<x-application-logo class="w-20 h-20 fill-current text-gray-500" />-->
             </a>
