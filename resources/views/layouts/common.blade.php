@@ -66,7 +66,7 @@
     <div class="dropdown">
     <button class="dropbtn">4. Contexto de la Organización</button>
     <div class="dropdown-content">
-        <a href="#"><i class="fa-solid fa-xmark"></i> FODA</a>
+        <a href="/documentos/activo/DGE-MA-GC-02"><i class="fa-solid fa-angle-right"></i> FODA</a>
         <a href="/documentos/activo/AA-BB-CC-04"><i class="fa-solid fa-angle-right"></i> Partes interesadas</a>
         <a href="/documentos/activo/DGE-MA-GC-01"><i class="fa-solid fa-angle-right"></i> Alcance del SGC</a>
         <a href="#"><i class="fa-solid fa-xmark"></i> Mapa de procesos</a>
@@ -97,7 +97,7 @@
         <a href="/documentos/activo/DGE-FR-GC-103"><i class="fa-solid fa-angle-right"></i> Determinación de ambiente de trabajo</a>
         <strong>Capacitaciones</strong>
         <a href="/folders/Matriz_de_Capactaciones"><i class="fa-solid fa-angle-right"></i> Matriz de capacitaciones</a>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Instrucción de trabajo de informacion documentada</a>
+        <a href="/documentos/activo/DGE-IT-GC-12"><i class="fa-solid fa-angle-right"></i> Instrucción de trabajo de informacion documentada</a>
     </div>
     </div>
 
@@ -117,11 +117,10 @@
     <button class="dropbtn">9. Evaluación de desempeño</button>
     <div class="dropdown-content">
         <strong>Auditorias</strong>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Calendario de auditorias</a>
-        <strong>Internas</strong>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Documentos</a>
-        <strong>Externas</strong>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Documentos</a>
+        <!-- <a href="#"><i class="fa-solid fa-xmark"></i> Calendario de auditorias</a> -->
+        <strong></strong>
+        <a href="/folders/Auditorias_Internas"><i class="fa-solid fa-angle-right"></i> Auditorias Internas</a>
+        <a href="/folders/Auditorias_Externas"><i class="fa-solid fa-angle-right"></i> Auditorias Externas</a>
         <strong></strong>
         <a href="/documentos/activo/DGE-FR-GC-55"><i class="fa-solid fa-angle-right"></i> Revisión por la dirección</a>
         <!-- <a href="#"><i class="fa-solid fa-xmark"></i> Información documentada de los procesos</a> -->

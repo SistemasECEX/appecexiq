@@ -156,7 +156,7 @@
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Código</th>
-                    <th scope="col">Titulo</th>
+                    <th scope="col" style="max-width:350px">Titulo</th>
                     <th scope="col">Revisión</th>
                     <th scope="col">Fecha</th>
                     <th scope="col">Responsable</th>
@@ -182,12 +182,12 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $documento->codigo }}</td>
-                        <td>{{ $documento->titulo }}</td>
+                        <td style="max-width:300px">{{ $documento->titulo }}</td>
                         <td>{{ $documento->rev }}</td>
                         <td>{{ explode(" ",$documento->fecha)[0] }}</td>
                         <td>{{ $documento->responsable()->name }}</td>
                         <td>{{ $documento->estado }}</td>
-                        <td>@if ($documento->activo) <i class="fas fa-check-square" style="color:green"></i> @else <i class="fa-solid fa-square-xmark" style="color:red"></i> @endif</td>
+                        <td>@if ($documento->activo) <i class="fas fa-check-square" style="color:green"></i> Activo @else <i class="fa-solid fa-square-xmark" style="color:red"></i> In-activo @endif</td>
                         @if ($nivel > 1) 
                             @if ($documento->path())<td><a href="/documentos/documentos_view/{{ $documento->id }}"><i style="color: #CCC;font-size:35px;" class="fa-solid fa-file-pdf"></i></a></td> @else<td></td>@endif
                         @endif
