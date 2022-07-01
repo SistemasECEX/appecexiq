@@ -17,7 +17,7 @@ class DocumentoController extends Controller
      */
     public function index()
     {
-        $usuarios = User::where('tipo','Responsable')->orWhere('tipo','Administravor')->get();
+        $usuarios = User::where('tipo','Responsable')->orWhere('tipo','Administrador')->get();
         $documentos = Documento::all();
         $nivel = Auth::user()->getUserNivel();
         //$directorios = Storage::allDirectories("public");
