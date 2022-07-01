@@ -125,14 +125,14 @@
         <a href="/documentos/activo/DGE-FR-GC-55"><i class="fa-solid fa-angle-right"></i> Revisión por la dirección</a>
         <!-- <a href="#"><i class="fa-solid fa-xmark"></i> Información documentada de los procesos</a> -->
         <strong>Métricos</strong>
-        <a href="/folders/Encuestas_de_satisfaccion_al_cliente"><i class="fa-solid fa-angle-right"></i> Encuestas de satisfacción al cliente</a>
+        <a href="/folders/Encuestas_de_satisfaccion_al_cliente"><i class="fa-solid fa-angle-right"></i> Evidencia de Métricos</a>
     </div>
     </div>
 
     <div class="dropdown">
     <button class="dropbtn">10. Mejora</button>
     <div class="dropdown-content">
-        <a href="/documentos/activo/DGE-PR-GC-23"><i class="fa-solid fa-angle-right"></i> Mejora continua</a>
+        <a href="/documentos/activo/DGE-FR-GC-32"><i class="fa-solid fa-angle-right"></i> Mejora continua</a>
         <strong>Acciones correctivas</strong>
         <a href="/folders/Listado_de_Acciones"><i class="fa-solid fa-angle-right"></i> Listado de acciones</a>
         <a href="/folders/Matriz_de_AC"><i class="fa-solid fa-angle-right"></i> Matriz de AC</a>
