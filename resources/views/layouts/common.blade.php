@@ -67,9 +67,9 @@
     <button class="dropbtn">4. Contexto de la Organización</button>
     <div class="dropdown-content">
         <a href="/documentos/activo/DGE-MA-GC-02"><i class="fa-solid fa-angle-right"></i> FODA</a>
-        <a href="/documentos/activo/AA-BB-CC-04"><i class="fa-solid fa-angle-right"></i> Partes interesadas</a>
+        <a href="/documentos/activo/DGE-MA-GC-04"><i class="fa-solid fa-angle-right"></i> Partes interesadas</a>
         <a href="/documentos/activo/DGE-MA-GC-01"><i class="fa-solid fa-angle-right"></i> Alcance del SGC</a>
-        <a href="#"><i class="fa-solid fa-xmark"></i> Mapa de procesos</a>
+        <a href="/documentos/activo/DGE-MA-GC-07"><i class="fa-solid fa-angle-right"></i> Mapa de procesos</a>
     </div>
     </div>
 
@@ -143,15 +143,19 @@
 
 </header>
 
-            <!-- Page Content -->
-            @yield('content')
+        <!-- Page Content -->
+        @yield('content')
             
         </div>
         <!-- bootstrap JS (down at the end of body) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
         <!-- MODAL -->
 
         <!-- Button trigger modal -->

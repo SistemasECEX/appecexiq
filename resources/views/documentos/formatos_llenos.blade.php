@@ -199,7 +199,7 @@
     }
     function showAdjuntos(content_row)
     {
-        var html = $("#"+content_row).html();   
+        var html = $("#"+content_row).html();  
         showModal("Adjuntos",html.replace(/src_aux/g, "src"));
     }
 
