@@ -252,6 +252,7 @@
             $("#chkActivo").prop('checked', result["activo"]);
             $("#documento_id").val(result["id"]); 
             $("#frm_nuevo").show();
+            $("#txtCodigo").focus(); 
         });
     }
 

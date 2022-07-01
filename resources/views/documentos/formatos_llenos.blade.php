@@ -108,7 +108,7 @@
                             {
                                 
                                 $i++;
-                                if(strpos($adjunto, 'jpg') !== false || strpos($adjunto, 'gif') !== false || strpos($adjunto, 'jpeg') !== false)
+                                if(strpos($adjunto, 'jpg') !== false || strpos($adjunto, 'gif') !== false || strpos($adjunto, 'jpeg') !== false || strpos($adjunto, 'png') !== false)
                                 {
                                     //es imagen
                                     echo "<br>";
