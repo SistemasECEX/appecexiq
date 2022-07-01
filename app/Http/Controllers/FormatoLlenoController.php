@@ -88,7 +88,7 @@ class FormatoLlenoController extends Controller
                 {
                     $i++;
                     $path_adjuntos_public = '/public/Archivos/Formatos_Llenos/' . $registro->id . '/' . 'adjuntos/' . $i . "." . $file->extension();    
-                    Storage::put($path_adjuntos_public, file_get_contents($file));
+                    Storage::put($path_adjuntos_public, file_get_contents($file),'public');
                 }
             }
         }
