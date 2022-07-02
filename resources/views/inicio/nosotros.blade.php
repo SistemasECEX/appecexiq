@@ -30,14 +30,9 @@
                         <!--Carrusel de fotos DAVID's -->
                         <div id="carouselExampleControlsD" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
+                              
                               <div class="carousel-item active">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/mision1.jpeg')}}" alt="First slide">
-                              </div>
-                              <div class="carousel-item">
                                 <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/mision2.png')}}" alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/vision1.jpeg')}}" alt="Third slide">
                               </div>
                               <div class="carousel-item">
                                 <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/vision2.png')}}" alt="fourth slide">
@@ -46,20 +41,9 @@
                                 <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/politica_calidad_davids.png')}}" alt="Fifth slide">
                               </div>
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/oc1.jpeg')}}" alt="6th slide">
+                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/objetivos.png')}}" alt="Fifth slide">
                               </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/oc2.jpeg')}}" alt="7th slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/oc3.jpeg')}}" alt="8th slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/oc4.jpeg')}}" alt="9th slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/oc5.jpeg')}}" alt="10th slide">
-                              </div>                             
+                                                         
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControlsD" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -77,13 +61,7 @@
                         <div id="carouselExampleControlsE" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosecex/mision1.jpeg')}}" alt="First slide">
-                              </div>
-                              <div class="carousel-item">
                                 <img class="d-block w-100" src="{{asset('storage/images/fotosecex/mision2.png')}}" alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosecex/vision1.jpeg')}}" alt="Third slide">
                               </div>
                               <div class="carousel-item">
                                 <img class="d-block w-100" src="{{asset('storage/images/fotosecex/vision2.png')}}" alt="Fourth slide">
@@ -92,19 +70,7 @@
                                 <img class="d-block w-100" src="{{asset('storage/images/fotosecex/politica_calidad_ecex.png')}}" alt="5th slide">
                               </div>
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosecex/oc1.jpeg')}}" alt="6th slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosecex/oc2.jpeg')}}" alt="7th slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosecex/oc3.jpeg')}}" alt="8th slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosecex/oc4.jpeg')}}" alt="9th slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="{{asset('storage/images/fotosecex/oc5.jpeg')}}" alt="10th slide">
+                                <img class="d-block w-100" src="{{asset('storage/images/fotosdavids/objetivos.png')}}" alt="Fifth slide">
                               </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControlsE" role="button" data-slide="prev">
