@@ -111,12 +111,16 @@
                                         <td><button type="button" class="btn btn-light" onclick="window.location.href='/documentos/formatos_llenos/{{$formato->codigo}}'"><i class="far fa-folder-open"></i></button></td>
                                         @if(!empty($archivos))
                                             @foreach($archivos as $archivo)
-                                            @if($formato->codigo == $archivo->codigo)
-                                                <td><a href="/documentos/documentos_view/{{ $archivo->rd_id }}" target="_blank"><i style="color: rgb(6, 126, 12);font-size:35px;" class="fa-solid fa-file-pdf"></i></a></td>
-                                                @break
-                                            @endif
-                                            <td><i class="fa-solid fa-square-xmark" style="color:red"></i> NO-Existe</td>
+                                                @if($formato->codigo == $archivo->codigo)
+                                                    <td><a href="/documentos/documentos_view/{{ $archivo->rd_id }}" target="_blank"><i style="color: rgb(6, 126, 12);font-size:35px;" class="fa-solid fa-file-pdf"></i></a></td>
+                                                    {{$aux=true}}
+                                                    @break
+                                                @endif
+                                                {{$aux=false}}
                                             @endforeach
+                                            @if($aux==false)
+                                                <td><i class="fa-solid fa-square-xmark" style="color:red"></i> NO-Existe</td>
+                                            @endif
                                         @else
                                             <td><i class="fa-solid fa-square-xmark" style="color:red"></i> NO-Existe</td>
                                         @endif
@@ -133,13 +137,16 @@
                                             @endif
                                         @endforeach
                                         <td><button type="button" class="btn btn-light" onclick="window.location.href='/documentos/formatos_llenos/{{$formato->codigo}}'"><i class="far fa-folder-open"></i></button></td>
-                                        @foreach($archivos as $archivo)
-                                            @if($formato->codigo == $archivo->codigo)
-                                                <td><a href="/documentos/documentos_view/{{ $archivo->rd_id }}" target="_blank"><i style="color: rgb(6, 126, 12);font-size:35px;" class="fa-solid fa-file-pdf"></i></a></td>
-                                                @break
-                                            @endif
+                                        @if(!empty($archivos))
+                                            @foreach($archivos as $archivo)
+                                                @if($formato->codigo == $archivo->codigo)
+                                                    <td><a href="/documentos/documentos_view/{{ $archivo->rd_id }}" target="_blank"><i style="color: rgb(6, 126, 12);font-size:35px;" class="fa-solid fa-file-pdf"></i></a></td>
+                                                    @break
+                                                @endif
+                                            @endforeach
+                                        @else
                                             <td><i class="fa-solid fa-square-xmark" style="color:red"></i> NO-Existe</td>
-                                        @endforeach
+                                        @endif
                                         @break
                                 @endswitch
                             </tr>

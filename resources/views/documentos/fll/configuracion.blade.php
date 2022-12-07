@@ -62,7 +62,7 @@
                             <option value="{{$su->id}}">{{$su->name}}</option>
                         @endforeach
                     </select>
-                    <button class="btn btn-success" onclick="adduser('1')" >Agregar <i class="fa-solid fa-plus"></i></button>
+                    <button class="btn btn-success" onclick="adduser({{$su->id}})" >Agregar <i class="fa-solid fa-plus"></i></button>
                 </div>
                 <br>
                 <table class="table tbl-reg table-sm table-hover">
@@ -135,7 +135,7 @@
         $.ajax({url: "/documentos/formatos_llenos/config/saveuser/"+id,context: document.body}).done(function(result) 
         {
             alert(result);
-        }
+        });
     }
 
 

@@ -49,6 +49,7 @@ class FormatoLlenoController extends Controller
         
         //$formatos_llenos=null;
        
+       
         return view('documentos.formatos_llenos', [
             'formatos_llenos' => $formatos_llenos,
             'userlog'=>$userlog,
@@ -218,7 +219,8 @@ class FormatoLlenoController extends Controller
     }
 
     public function periodocodigo(Request $request)
-    {        
+    {
+        dd($request);
         return redirect('/documentos/formatos_llenos');
     }
 

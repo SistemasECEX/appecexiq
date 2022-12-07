@@ -32,6 +32,7 @@ class DocumentoController extends Controller
         //     "SGC/Seguridad",
         //     "SGC/Calidad",
         // ];
+        //dd($documentos[0]);
         return view('documentos.documentos', [
             'usuarios' => $usuarios,
             'documentos' => $documentos,
